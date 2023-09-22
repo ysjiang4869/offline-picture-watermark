@@ -8,10 +8,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Additional custom styles if needed */
-
         .canvas-container {
             border: 1px dashed #AAA;
             cursor: pointer;
+        }
+
+        .label {
+            margin-right: 30px;
+        }
+
+        #graph canvas {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            #graph canvas {
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #graph canvas {
+                max-width: 100%;
+            }
         }
 
         .label {
